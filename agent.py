@@ -46,11 +46,12 @@ agent = create_react_agent(
     checkpointer=memory
 )
 
-# Run the agent
-response=agent.invoke(
-    {"messages": [{"role": "user", "content": "Who won in the 2nd Sep Pak Cricket match"}]},
-    config={"configurable": {"thread_id": "user123"}}
-)
+# # Run the agent
+# response=agent.invoke(
+#     {"messages": [{"role": "user", "content": "Who won in the 2nd Sep Pak Cricket match"}]},
+#     config={"configurable": {"thread_id": "user123"}}
+# )
 
-# Last Message
-print(response['messages'][-1].content)
+# # Last Message
+# print(response['messages'][-1].content)
+
