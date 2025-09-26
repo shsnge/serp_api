@@ -2,7 +2,7 @@ from langgraph.prebuilt import create_react_agent
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.checkpoint.memory import InMemorySaver
-
+from serpapi import GoogleSearch
 llm = ChatGoogleGenerativeAI(
     api_key="AIzaSyDkk4Po9JXSK6mfYWjqZyw18cJE4pyoljg",
     model="gemini-2.5-flash",
@@ -12,7 +12,7 @@ llm = ChatGoogleGenerativeAI(
     max_retries=2
 )
 
-from serpapi import GoogleSearch
+
 
 
 def serpapi_search(query: str):
